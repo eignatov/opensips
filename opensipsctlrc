@@ -7,7 +7,7 @@
 # will use their internal default values.
 
 ## your SIP domain
-# SIP_DOMAIN=opensips.org
+SIP_DOMAIN=42.117.9.12
 
 ## chrooted directory
 # $CHROOT_DIR="/path/to/chrooted/directory"
@@ -16,25 +16,25 @@
 ## by default none is loaded
 # If you want to setup a database with opensipsdbctl, you must at least specify
 # this parameter.
-# DBENGINE=MYSQL
+ DBENGINE=MYSQL
 
 ## database host
-# DBHOST=localhost
+ DBHOST=localhost
 
 ## database name (for ORACLE this is TNS name)
-# DBNAME=opensips
+ DBNAME=opensips
 
 # database path used by dbtext or db_berkeley
 # DB_PATH="/usr/local/etc/opensips/dbtext"
 
 ## database read/write user
-# DBRWUSER=opensips
+ DBRWUSER=opensips
 
 ## password for database read/write user
-# DBRWPW="opensipsrw"
+ DBRWPW="opensipsrw"
 
 ## database super user (for ORACLE this is 'scheme-creator' user)
-# DBROOTUSER="root"
+ DBROOTUSER="root"
 
 # user name column
 # USERCOL="username"
@@ -72,10 +72,10 @@
 #
 
 # If to install tables for the modules in the EXTRA_MODULES variable.
-# INSTALL_EXTRA_TABLES=ask
+ INSTALL_EXTRA_TABLES=ask
 
 # If to install presence related tables.
-# INSTALL_PRESENCE_TABLES=ask
+ INSTALL_PRESENCE_TABLES=ask
 
 # Define what module tables should be installed.
 # If you use the postgres database and want to change the installed tables,
@@ -83,12 +83,12 @@
 # accordingly in the opensipsdbctl.base script.
 
 # opensips standard modules
-# STANDARD_MODULES="standard acc domain group permissions registrar usrloc 
-#                   msilo alias_db uri_db speeddial avpops auth_db pdt dialog 
-#                   dispatcher dialplan drouting nathelper load_balancer"
+ STANDARD_MODULES="standard acc domain group permissions registrar usrloc 
+                   msilo alias_db uri_db speeddial avpops auth_db pdt dialog 
+                   dispatcher dialplan drouting nathelper load_balancer"
 
 # opensips extra modules
-# EXTRA_MODULES="imc cpl siptrace domainpolicy carrierroute userblacklist b2b"
+ EXTRA_MODULES="imc cpl siptrace domainpolicy carrierroute userblacklist b2b"
 
 
 ## type of aliases used: DB - database aliases; UL - usrloc aliases
@@ -100,7 +100,7 @@
 # CTLENGINE=xmlrpc
 
 ## path to FIFO file
-# OSIPS_FIFO="/tmp/opensips_fifo"
+ OSIPS_FIFO="/tmp/opensips_fifo"
 
 ## MI_CONNECTOR control engine: FIFO, UNIXSOCK, UDP, XMLRPC
 # MI_CONNECTOR=FIFO:/tmp/opensips_fifo
